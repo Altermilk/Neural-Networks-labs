@@ -47,7 +47,7 @@ class NeuralNet(nn.Module):
         x = self.fc2(x)
         return x
 ```
-Tensor transformation filters
+## Tensor transformation filters
 ```python
 transform = transforms.Compose([
     transforms.Resize((32, 32)),
@@ -59,7 +59,7 @@ transform = transforms.Compose([
     transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5))
 ])
 ```
-Learning cycle
+## Learning cycle
 ```python
 for epoch in range(epoches):
         print(f'Epoch {epoch+1}/{epoches}...')
